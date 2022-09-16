@@ -1,0 +1,13 @@
+.about {
+  width: 100%;
+  max-width: 700px;
+  margin: 10rem auto;
+  padding: 0 1rem;
+  color: var(--color-white);
+}
+
+.about p {
+  font-size: var(--size-small);
+  font-weight: var(--weight-bold);
+  text-align: center;
+}
