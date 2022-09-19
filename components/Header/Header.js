@@ -20,7 +20,7 @@ export default function Header() {
         quality={100}
       />
       <nav>
-        <h1>
+        <h1 title="Josh Nussbaum">
           <Link href="/">JN</Link>
         </h1>
         <ul>
