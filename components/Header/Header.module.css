@@ -2,6 +2,7 @@
   position: relative;
   height: 100vh;
   color: var(--color-white);
+  margin: 0 0 10rem;
 }
 
 /* TODO: make sure background color in "Work" section handles scrolling effect you're looking for */
@@ -57,6 +58,7 @@
 }
 
 .greeting h2 {
+  margin-bottom: 1rem;
   font-size: var(--size-large);
 }
 
@@ -64,4 +66,35 @@
   font-size: var(--size-medium);
   font-weight: var(--weight-bold);
   max-width: 35rem;
+}
+
+.arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid var(--color-white);
+  border-left: 4px solid var(--color-white);
+  animation: bounce 3s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0) rotate(225deg);
+  }
+  40% {
+    transform: translateY(-0.5rem) rotate(225deg);
+  }
+  60% {
+    transform: translateY(-0.25rem) rotate(225deg);
+  }
 }

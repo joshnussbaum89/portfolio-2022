@@ -1,9 +1,9 @@
 // Styles
 import styles from './About.module.css'
 
-export default function About() {
+export default function About({ elRef }) {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} ref={elRef}>
       <p>
         I&apos;ve spent my life pursuing music as a professional guitarist. I
         graduated from the University of the Arts in Philadelphia, PA in 2013

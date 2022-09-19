@@ -8,7 +8,7 @@ import styles from './Header.module.css'
 // Images
 import heroImage from '../../public/hero-background.jpg'
 
-export default function Header() {
+export default function Header({ handleScroll }) {
   return (
     <header className={styles.header}>
       <Image
@@ -39,6 +39,7 @@ export default function Header() {
           creative things for creative people
         </p>
       </div>
+      <div className={styles.arrow} onClick={handleScroll}></div>
     </header>
   )
 }

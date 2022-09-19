@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  height: 200vh;
+  background: var(--color-light-grey);
+}
+
+.container h3 {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  font-size: var(--size-medium);
+}
+
+.container h3 span {
+  color: var(--color-red);
+}
