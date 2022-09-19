@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 100;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.dot {
+  height: 20px;
+  width: 100%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.teal {
+  background-color: var(--color-teal);
+}
+
+.red {
+  background-color: var(--color-red);
+}
+
+.purple {
+  background-color: var(--color-purple);
+}
+
+.green {
+  background-color: var(--color-green);
+}
