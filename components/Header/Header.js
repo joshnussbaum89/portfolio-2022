@@ -21,7 +21,7 @@ export default function Header() {
       />
       <nav>
         <h1>
-          <Link href="/">Josh Nussbaum</Link>
+          <Link href="/">JN</Link>
         </h1>
         <ul>
           <li>
@@ -35,8 +35,8 @@ export default function Header() {
       <div className={styles.greeting}>
         <h2>Hi, I&apos;m Josh</h2>
         <p>
-          I&apos;m a web developer with a passion for building creative things
-          for creative people
+          I&apos;m a web developer and musician with a passion for building
+          creative things for creative people
         </p>
       </div>
     </header>
