@@ -18,3 +18,12 @@
 .description p {
   margin: 1rem;
 }
+
+.description h4 {
+  font-size: var(--size-medium);
+}
+
+.description p {
+  font-size: var(--size-small);
+  font-weight: var(--weight-regular);
+}
