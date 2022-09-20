@@ -4,9 +4,10 @@ import { useState } from 'react'
 // Styles
 import styles from './ScrollingNavigation.module.css'
 
+// Fixed scrolling navigation dots
 export default function ScrollingNavigation() {
   const [activeIndex, setActiveIndex] = useState(null)
-  
+
   const data = [
     {
       id: 0,
@@ -44,14 +45,16 @@ export default function ScrollingNavigation() {
 
   return (
     <div className={styles.container}>
-      {data.map((dot) => {
+      {data.map((element) => {
         return (
           <div
             className={
-              activeIndex === dot.id ? `${styles.dot} ${dot.class}` : styles.dot
+              activeIndex === element.id
+                ? `${styles.dot} ${element.class}`
+                : styles.dot
             }
-            key={dot.id}
-            onClick={() => handleClick(dot.id)}
+            onClick={() => handleClick(element.id)}
+            key={element.id}
           ></div>
         )
       })}
