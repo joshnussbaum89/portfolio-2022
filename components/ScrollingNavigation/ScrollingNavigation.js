@@ -7,7 +7,7 @@ import styles from './ScrollingNavigation.module.css'
 
 // Fixed scrolling navigation dots
 export default function ScrollingNavigation() {
-  const [activeIndex, setActiveIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState(0)
 
   const data = [
     {
