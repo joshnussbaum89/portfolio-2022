@@ -14,7 +14,7 @@ export default function Project({ name, image, description, color }) {
         loading="lazy"
         alt={`${name} - ${description}`}
       />
-      <div className={styles.description}>
+      <div className={`${styles.description} ${color}`}>
         <h4>Background</h4>
         <p>{description}</p>
       </div>
