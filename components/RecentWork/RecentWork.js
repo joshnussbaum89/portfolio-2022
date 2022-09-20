@@ -9,6 +9,9 @@ import tomFord from '../../public/tom-ford.png'
 import supervoid from '../../public/supervoid.png'
 import togetherForward from '../../public/together-forward.png'
 import robbyWebb from '../../public/robby-webb.png'
+import whatAlreadyIs from '../../public/what-already-is.jpeg'
+import liveAtTheHangar from '../../public/live-at-the-hangar.jpeg'
+import peaceDrink from '../../public/peace-drink.jpeg'
 
 export default function RecentWork() {
   const data = {
@@ -49,32 +52,24 @@ export default function RecentWork() {
     musicData: [
       {
         id: 0,
-        name: 'Tom Ford',
-        image: tomFord,
+        name: 'What Already Is',
+        image: whatAlreadyIs,
         description:
           'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
         class: `${styles.purple}`,
       },
       {
         id: 1,
-        name: 'Supervoid',
-        image: supervoid,
+        name: 'Live at the Hangar',
+        image: liveAtTheHangar,
         description:
           'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
         class: `${styles.purple}`,
       },
       {
         id: 2,
-        name: 'Together Forward',
-        image: togetherForward,
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
-        class: `${styles.purple}`,
-      },
-      {
-        id: 3,
-        name: 'Robby Webb',
-        image: robbyWebb,
+        name: 'Rover Rover, Peace Drink',
+        image: peaceDrink,
         description:
           'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
         class: `${styles.purple}`,

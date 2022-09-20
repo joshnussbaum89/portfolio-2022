@@ -1,15 +1,17 @@
 .image,
 .description {
   width: 100%;
-  height: auto;
   border-radius: 10px;
 }
 
 .image {
+  height: 389px;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
 .description {
+  height: auto;
   margin-bottom: 6rem;
   background-color: var(--color-white);
 }
