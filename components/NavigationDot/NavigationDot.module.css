@@ -1,0 +1,24 @@
+.dot {
+  height: 20px;
+  width: 100%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.teal {
+  background-color: var(--color-teal);
+}
+
+.red {
+  background-color: var(--color-red);
+}
+
+.purple {
+  background-color: var(--color-purple);
+}
+
+.green {
+  background-color: var(--color-green);
+}

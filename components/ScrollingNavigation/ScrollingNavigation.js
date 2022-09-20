@@ -1,5 +1,6 @@
 // Components
 import { useState } from 'react'
+import NavigationDot from '../NavigationDot/NavigationDot'
 
 // Styles
 import styles from './ScrollingNavigation.module.css'
@@ -13,49 +14,42 @@ export default function ScrollingNavigation() {
       id: 0,
       section: 'home',
       color: '#0ca5ab',
-      class: `${styles.teal}`,
     },
     {
       id: 1,
       section: 'about',
       color: '#0ca5ab',
-      class: `${styles.teal}`,
     },
     {
       id: 2,
       section: 'web development',
       color: '#de3726',
-      class: `${styles.red}`,
     },
     {
       id: 3,
       section: 'music',
       color: '#1e1e1e',
-      class: `${styles.purple}`,
     },
     {
       id: 4,
       section: 'contact',
       color: '#7bc19f',
-      class: `${styles.green}`,
     },
   ]
 
+  // User clicks dot > update 'activeIndex'
   const handleClick = (key) => setActiveIndex(key)
 
   return (
     <div className={styles.container}>
-      {data.map((element) => {
+      {data.map((dot) => {
         return (
-          <div
-            className={
-              activeIndex === element.id
-                ? `${styles.dot} ${element.class}`
-                : styles.dot
-            }
-            onClick={() => handleClick(element.id)}
-            key={element.id}
-          ></div>
+          <NavigationDot
+            key={dot.id}
+            dotId={dot.id}
+            activeIndex={activeIndex}
+            handleClick={handleClick}
+          />
         )
       })}
     </div>
