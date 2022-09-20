@@ -1,16 +1,23 @@
 .container {
   position: relative;
-  height: 200vh;
+  padding: 1rem;
   background: var(--color-light-grey);
+  border-top: 4px solid var(--color-light-red);
 }
 
-.container h3 {
+.content {
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+}
+
+.content h3 {
   position: sticky;
   top: 0;
-  padding: 1rem;
+  margin: 1rem 0;
   font-size: var(--size-medium);
 }
 
-.container h3 span {
+.content h3 span {
   color: var(--color-red);
 }

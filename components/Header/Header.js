@@ -12,12 +12,12 @@ export default function Header({ handleScroll }) {
   return (
     <header className={styles.header}>
       <Image
-        className={styles.image}
         src={heroImage}
-        alt="Birds flying in front of a beautiful sunset"
+        className={styles.image}
         placeholder="blur"
         priority="true"
         quality={100}
+        alt="Birds flying in front of a beautiful sunset"
       />
       <nav>
         <h1 title="Josh Nussbaum">

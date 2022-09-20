@@ -31,7 +31,7 @@
   background-color: var(--color-light-teal);
   border: 2px solid var(--color-black);
   border-radius: 4px;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition-normal);
 }
 
 @media (min-width: 768px) {
