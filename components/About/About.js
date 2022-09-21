@@ -1,9 +1,9 @@
 // Styles
 import styles from './About.module.css'
 
-export default function About({ handleAboutPosition }) {
+export default function About({ trackAboutPosition }) {
   return (
-    <section id="about" className={styles.about} ref={handleAboutPosition}>
+    <section id="about" className={styles.about} ref={trackAboutPosition}>
       <p>
         I&apos;ve spent my life pursuing music as a professional guitarist. I
         graduated from the University of the Arts in Philadelphia, PA in 2013

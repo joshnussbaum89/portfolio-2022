@@ -8,39 +8,38 @@ import RecentWork from '../components/RecentWork/RecentWork'
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0)
-  const [activeIndex, setActiveIndex] = useState(0)
   const [aboutPosition, setAboutPosition] = useState(0)
   const [devPosition, setDevPosition] = useState(0)
   const [musicPosition, setMusicPosition] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0)
 
+  // Set scrollY value
   useEffect(() => {
-    window.addEventListener('scroll', () => setScrollY(window.scrollY))
-    return () =>
-      window.removeEventListener('scroll', () => setScrollY(window.scrollY))
+    const updatePosition = () => setScrollY(window.scrollY)
+    window.addEventListener('scroll', updatePosition)
+    updatePosition()
+    return () => window.removeEventListener('scroll', updatePosition)
   }, [])
 
-  const handleAboutPosition = (el) => {
-    if (!el) return
-    setAboutPosition(el.getBoundingClientRect().top)
-
-    if (aboutPosition < 100) {
-      setActiveIndex(1)
-    } else {
-      setActiveIndex(0)
-    }
+  // Track section locations for scrolling logic + styling updates
+  const trackAboutPosition = (element) => {
+    if (!element) return
+    setAboutPosition(element.getBoundingClientRect().top)
+    aboutPosition < 100 ? setActiveIndex(1) : setActiveIndex(0)
   }
-
-  const handleDevPosition = (el) => {
-    if (!el) return
-    setDevPosition(el.getBoundingClientRect().top)
+  const trackDevPosition = (element) => {
+    if (!element) return
+    setDevPosition(element.getBoundingClientRect().top)
     if (devPosition < 100) setActiveIndex(2)
   }
-
-  const handleMusicPosition = (el) => {
-    if (!el) return
-    setMusicPosition(el.getBoundingClientRect().top)
+  const trackMusicPosition = (element) => {
+    if (!element) return
+    setMusicPosition(element.getBoundingClientRect().top)
     if (musicPosition < 100) setActiveIndex(3)
   }
+
+  // User clicks navigation dot > update 'active' styling and page location
+  const handleClick = (key) => setActiveIndex(key)
 
   return (
     <>
@@ -54,13 +53,13 @@ export default function Home() {
       </Head>
       <Header />
       <ScrollingNavigation
+        handleClick={handleClick}
         activeIndex={activeIndex}
-        handleClick={(key) => setActiveIndex(key)}
       />
-      <About handleAboutPosition={handleAboutPosition} />
+      <About trackAboutPosition={trackAboutPosition} />
       <RecentWork
-        handleDevPosition={handleDevPosition}
-        handleMusicPosition={handleMusicPosition}
+        trackDevPosition={trackDevPosition}
+        trackMusicPosition={trackMusicPosition}
       />
     </>
   )

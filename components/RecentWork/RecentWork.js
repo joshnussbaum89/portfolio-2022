@@ -13,7 +13,7 @@ import whatAlreadyIs from '../../public/what-already-is.jpeg'
 import liveAtTheHangar from '../../public/live-at-the-hangar.jpeg'
 import peaceDrink from '../../public/peace-drink.jpeg'
 
-export default function RecentWork({ handleDevPosition, handleMusicPosition }) {
+export default function RecentWork({ trackDevPosition, trackMusicPosition }) {
   const data = {
     devData: [
       {
@@ -79,7 +79,7 @@ export default function RecentWork({ handleDevPosition, handleMusicPosition }) {
 
   return (
     <section id="work" className={styles.container}>
-      <div id="dev" className={styles.devContent} ref={handleDevPosition}>
+      <div id="dev" className={styles.devContent} ref={trackDevPosition}>
         <h3>
           Recent <span>Dev</span> Projects
         </h3>
@@ -95,7 +95,7 @@ export default function RecentWork({ handleDevPosition, handleMusicPosition }) {
           )
         })}
       </div>
-      <div id="music" className={styles.musicContent} ref={handleMusicPosition}>
+      <div id="music" className={styles.musicContent} ref={trackMusicPosition}>
         <h3>
           Recent <span>Music</span> Projects
         </h3>
