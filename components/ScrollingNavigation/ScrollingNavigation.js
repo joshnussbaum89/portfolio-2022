@@ -1,14 +1,12 @@
 // Components
-import { useState } from 'react'
 import NavigationDot from '../NavigationDot/NavigationDot'
 
 // Styles
 import styles from './ScrollingNavigation.module.css'
 
 // Fixed scrolling navigation dots
-export default function ScrollingNavigation() {
-  const [activeIndex, setActiveIndex] = useState(0)
-
+export default function ScrollingNavigation({ activeIndex, handleClick }) {
+  // Dot data
   const data = [
     {
       id: 0,
@@ -31,9 +29,6 @@ export default function ScrollingNavigation() {
       section: '#contact',
     },
   ]
-
-  // User clicks dot > update 'activeIndex'
-  const handleClick = (key) => setActiveIndex(key)
 
   return (
     <div className={styles.container}>
