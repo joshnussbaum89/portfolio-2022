@@ -5,7 +5,7 @@ import NavigationDot from '../NavigationDot/NavigationDot'
 import styles from './ScrollingNavigation.module.css'
 
 // Fixed scrolling navigation dots
-export default function ScrollingNavigation({ activeIndex, handleClick }) {
+export default function ScrollingNavigation({ activeIndex }) {
   // Dot data
   const data = [
     {
@@ -39,7 +39,6 @@ export default function ScrollingNavigation({ activeIndex, handleClick }) {
             dotId={dot.id}
             section={dot.section}
             activeIndex={activeIndex}
-            handleClick={handleClick}
           />
         )
       })}

@@ -38,9 +38,6 @@ export default function Home() {
     if (musicPosition < 100) setActiveIndex(3)
   }
 
-  // User clicks navigation dot > update 'active' styling and page location
-  const handleClick = (key) => setActiveIndex(key)
-
   return (
     <>
       <Head>
@@ -52,10 +49,7 @@ export default function Home() {
         <link rel="icon" href="/hero-background.jpg" />
       </Head>
       <Header />
-      <ScrollingNavigation
-        handleClick={handleClick}
-        activeIndex={activeIndex}
-      />
+      <ScrollingNavigation activeIndex={activeIndex} />
       <About trackAboutPosition={trackAboutPosition} />
       <RecentWork
         trackDevPosition={trackDevPosition}
