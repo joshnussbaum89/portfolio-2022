@@ -79,7 +79,7 @@ export default function RecentWork() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.devContent}>
+      <div id="dev" className={styles.devContent}>
         <h3>
           Recent <span>Dev</span> Projects
         </h3>
@@ -95,7 +95,7 @@ export default function RecentWork() {
           )
         })}
       </div>
-      <div className={styles.musicContent}>
+      <div id="music" className={styles.musicContent}>
         <h3>
           Recent <span>Music</span> Projects
         </h3>

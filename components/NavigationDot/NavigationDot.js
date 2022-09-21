@@ -1,7 +1,13 @@
 // Styles
+import Link from 'next/link'
 import styles from './NavigationDot.module.css'
 
-export default function NavigationDot({ dotId, activeIndex, handleClick }) {
+export default function NavigationDot({
+  dotId,
+  section,
+  activeIndex,
+  handleClick,
+}) {
   const colors = [
     `${styles.teal}`,
     `${styles.teal}`,
@@ -12,11 +18,13 @@ export default function NavigationDot({ dotId, activeIndex, handleClick }) {
 
   // When user clicks navigation dot, style dot and navigate to section
   return (
-    <div
-      className={
-        activeIndex === dotId ? `${styles.dot} ${colors[dotId]}` : styles.dot
-      }
-      onClick={() => handleClick(dotId)}
-    ></div>
+    <Link href={section}>
+      <div
+        className={
+          activeIndex === dotId ? `${styles.dot} ${colors[dotId]}` : styles.dot
+        }
+        onClick={() => handleClick(dotId)}
+      ></div>
+    </Link>
   )
 }

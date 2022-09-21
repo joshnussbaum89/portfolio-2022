@@ -12,28 +12,23 @@ export default function ScrollingNavigation() {
   const data = [
     {
       id: 0,
-      section: 'home',
-      color: '#0ca5ab',
+      section: '/',
     },
     {
       id: 1,
-      section: 'about',
-      color: '#0ca5ab',
+      section: '#about',
     },
     {
       id: 2,
-      section: 'web development',
-      color: '#de3726',
+      section: '#dev',
     },
     {
       id: 3,
-      section: 'music',
-      color: '#1e1e1e',
+      section: '#music',
     },
     {
       id: 4,
-      section: 'contact',
-      color: '#7bc19f',
+      section: '#contact',
     },
   ]
 
@@ -47,6 +42,7 @@ export default function ScrollingNavigation() {
           <NavigationDot
             key={dot.id}
             dotId={dot.id}
+            section={dot.section}
             activeIndex={activeIndex}
             handleClick={handleClick}
           />

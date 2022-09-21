@@ -39,7 +39,9 @@ export default function Header({ handleScroll }) {
           creative things for creative people
         </p>
       </div>
-      <div className={styles.arrow} onClick={handleScroll}></div>
+      <Link href="#about">
+        <div className={styles.arrow} onClick={handleScroll}></div>
+      </Link>
     </header>
   )
 }
