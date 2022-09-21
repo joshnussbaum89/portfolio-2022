@@ -25,10 +25,10 @@ export default function Header({ handleScroll }) {
         </h1>
         <ul>
           <li>
-            <a href="#work">Work</a>
+            <Link href="#work">Work</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>
       </nav>

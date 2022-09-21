@@ -78,7 +78,7 @@ export default function RecentWork({ handleDevPosition, handleMusicPosition }) {
   }
 
   return (
-    <section className={styles.container}>
+    <section id="work" className={styles.container}>
       <div id="dev" className={styles.devContent} ref={handleDevPosition}>
         <h3>
           Recent <span>Dev</span> Projects
