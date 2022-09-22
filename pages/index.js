@@ -1,27 +1,22 @@
-// Components
-import { useState, useEffect } from 'react'
+// Components, Hooks
+import { useState } from 'react'
 import Head from 'next/head'
 import Header from '../components/Header/Header'
 import ScrollingNavigation from '../components/ScrollingNavigation/ScrollingNavigation'
 import About from '../components/About/About'
 import RecentWork from '../components/RecentWork/RecentWork'
+import useScrollPosition from '../hooks/useScrollPosition'
 
 export default function Home() {
-  const [scrollY, setScrollY] = useState(0)
   const [aboutPosition, setAboutPosition] = useState(0)
   const [devPosition, setDevPosition] = useState(0)
   const [musicPosition, setMusicPosition] = useState(0)
   const [activeIndex, setActiveIndex] = useState(0)
 
-  // Set scrollY value
-  useEffect(() => {
-    const updatePosition = () => setScrollY(window.scrollY)
-    window.addEventListener('scroll', updatePosition)
-    updatePosition()
-    return () => window.removeEventListener('scroll', updatePosition)
-  }, [])
+  // Use scrollY value
+  useScrollPosition()
 
-  // Track section locations for scrolling logic + styling updates
+  // Track section ref locations for scrolling logic + styling updates
   const trackAboutPosition = (element) => {
     if (!element) return
     setAboutPosition(element.getBoundingClientRect().top)
