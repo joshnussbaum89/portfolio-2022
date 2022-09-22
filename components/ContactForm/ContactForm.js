@@ -1,8 +1,7 @@
 /****
 
 TODO: 
-1. build api endpoint to handle form submit (first just log response)
-2. Formspree integration
+1. Formspree integration
 
 ****/
 
@@ -10,8 +9,41 @@ TODO:
 import styles from './ContactForm.module.css'
 
 export default function ContactForm() {
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    // Get data from form submission
+    const data = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
+    }
+
+    // Send formatted JSON to server
+    const JSONdata = JSON.stringify(data)
+    const endpoint = '/api/form'
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSONdata,
+    }
+
+    // Send form data to API + get a response
+    const response = await fetch(endpoint, options)
+    const { body } = await response.json()
+
+    // Log response
+    console.log('Form Submitted: ', {
+      name: body.name,
+      email: body.email,
+      message: body.message,
+    })
+  }
+
   return (
-    <form action="/api/form" method="post" className={styles.form}>
+    <form onSubmit={handleSubmit} className={styles.form}>
       <label htmlFor="name">
         Name: <span>*</span>
       </label>
