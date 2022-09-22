@@ -6,11 +6,13 @@ import ScrollingNavigation from '../components/ScrollingNavigation/ScrollingNavi
 import About from '../components/About/About'
 import RecentWork from '../components/RecentWork/RecentWork'
 import useScrollPosition from '../hooks/useScrollPosition'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
   const [aboutPosition, setAboutPosition] = useState(0)
   const [devPosition, setDevPosition] = useState(0)
   const [musicPosition, setMusicPosition] = useState(0)
+  const [contactPosition, setContactPosition] = useState(0)
   const [activeIndex, setActiveIndex] = useState(0)
 
   // Use scrollY value
@@ -32,6 +34,11 @@ export default function Home() {
     setMusicPosition(element.getBoundingClientRect().top)
     if (musicPosition < 100) setActiveIndex(3)
   }
+  const trackContactPosition = (element) => {
+    if (!element) return
+    setContactPosition(element.getBoundingClientRect().top)
+    if (contactPosition < 100) setActiveIndex(4)
+  }
 
   return (
     <>
@@ -45,11 +52,14 @@ export default function Home() {
       </Head>
       <Header />
       <ScrollingNavigation activeIndex={activeIndex} />
-      <About trackAboutPosition={trackAboutPosition} />
-      <RecentWork
-        trackDevPosition={trackDevPosition}
-        trackMusicPosition={trackMusicPosition}
-      />
+      <main>
+        <About trackAboutPosition={trackAboutPosition} />
+        <RecentWork
+          trackDevPosition={trackDevPosition}
+          trackMusicPosition={trackMusicPosition}
+        />
+      </main>
+      <Footer trackContactPosition={trackContactPosition} />
     </>
   )
 }

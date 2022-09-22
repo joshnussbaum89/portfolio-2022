@@ -1,0 +1,65 @@
+.form {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 1.5rem);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 1rem;
+  font-size: var(--size-small);
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  font-size: var(--size-small);
+  border-radius: 5px;
+}
+
+.form label,
+.form input,
+.form textarea {
+  color: var(--color-black);
+}
+
+.form label {
+  margin-bottom: 0.25rem;
+}
+
+.form label span {
+  color: var(--color-red);
+}
+
+.form input,
+.form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  outline: 2px solid var(--color-light-grey);
+  outline-offset: -2px;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form button:focus {
+  outline: 2px solid var(--color-green);
+  outline-offset: -2px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form button {
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+  font-weight: var(--weight-extra-bold);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: none;
+  cursor: pointer;
+}

@@ -21,14 +21,10 @@
   --color-light-purple: #edcdff;
   --color-green: #7bc19f;
   --color-light-green: #d7ffeb;
-
-  /* Gradients */
   --color-light-grey-green-gradient: linear-gradient(
     var(--color-light-grey),
     var(--color-light-green)
   );
-  /* TODO: delete if not using */
-  --color-header-gradient: linear-gradient(#1ca8a5, #aabb85, #b76840);
 
   /* Transitions */
   --transition-normal: all 0.3s ease-in-out;
@@ -69,4 +65,10 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+input,
+textarea,
+button {
+  font-family: 'Syne', sans-serif;
 }

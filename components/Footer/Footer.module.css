@@ -1,0 +1,26 @@
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 1rem;
+  background: var(--color-light-grey-green-gradient);
+}
+
+.contact h3 {
+  margin-bottom: 1rem;
+  font-size: var(--size-medium);
+}
+
+.contact h3 span {
+  color: var(--color-green);
+}
+
+.contact p {
+  font-size: var(--size-medium);
+}
+
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  padding-top: 1rem;
+}
