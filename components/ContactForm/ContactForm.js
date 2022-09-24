@@ -1,58 +1,37 @@
-/****
-
-TODO: 
-1. Formspree integration
-
-****/
+// Components
+import { useForm, ValidationError } from '@formspree/react'
 
 // Styles
 import styles from './ContactForm.module.css'
 
 export default function ContactForm() {
-  const handleSubmit = async (event) => {
-    event.preventDefault()
-
-    // Get data from form submission
-    const data = {
-      name: event.target.name.value,
-      email: event.target.email.value,
-      message: event.target.message.value,
-    }
-
-    // Send formatted JSON to server
-    const JSONdata = JSON.stringify(data)
-    const endpoint = '/api/form'
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSONdata,
-    }
-
-    // Send form data to API + get a response
-    const response = await fetch(endpoint, options)
-    const { body } = await response.json()
-
-    // Log response
-    console.log('Form Submitted: ', {
-      name: body.name,
-      email: body.email,
-      message: body.message,
-    })
-  }
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <label htmlFor="name">
         Name: <span>*</span>
       </label>
-      <input id="name" type="text" name="name" required />
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="John Doe"
+        required
+      />
+      <ValidationError prefix="Name" field="name" errors={state.errors} />
 
       <label htmlFor="email">
         Email: <span>*</span>
       </label>
-      <input id="email" type="email" name="email" required />
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="JohnDoe@mail.com"
+        required
+      />
+      <ValidationError prefix="Email" field="email" errors={state.errors} />
 
       <label htmlFor="message">
         Message: <span>*</span>
@@ -62,10 +41,22 @@ export default function ContactForm() {
         name="message"
         cols="30"
         rows="5"
+        placeholder="Message..."
         required
       ></textarea>
+      <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-      <button type="submit">Submit</button>
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+
+      {state.succeeded ? (
+        <div className={styles.success}>
+          Thanks, I&apos;ll get back to you soon!
+        </div>
+      ) : (
+        <ValidationError errors={state.errors} className={styles.errors} />
+      )}
     </form>
   )
 }
