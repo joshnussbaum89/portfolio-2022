@@ -1,18 +1,38 @@
 .about {
-  width: 100%;
-  max-width: 700px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto 10rem;
+  margin-bottom: 10rem;
   padding: 1rem;
   color: var(--color-white);
 }
 
-.about p {
-  margin-bottom: 1.5rem;
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  padding: 1rem;
+  color: var(--color-black);
+  background-color: var(--color-light-transparent-teal);
+  border: 4px solid var(--color-black);
+  border-radius: 10px;
+}
+
+.container p {
   font-size: var(--size-small);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-regular);
   text-align: center;
+}
+
+.container p:not(.about p:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.container span {
+  font-weight: var(--weight-bold);
+}
+
+.container span.banner {
+  font-size: var(--size-medium);
 }
