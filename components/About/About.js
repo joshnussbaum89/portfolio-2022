@@ -20,7 +20,7 @@ export default function About({ trackAboutPosition }) {
         </p>
         <p>
           Over the years, I&apos;ve explored performing, writing, composing,
-          arranging, recording, video production... you get the idea. I love
+          arranging, recording, video production... you get the idea. I like
           making stuff.
         </p>
         <p>•••</p>

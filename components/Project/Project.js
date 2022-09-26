@@ -5,8 +5,12 @@ import Image from 'next/future/image'
 import styles from './Project.module.css'
 
 export default function Project({ name, image, description, color }) {
+  function createMarkup() {
+    return { __html: description }
+  }
+
   return (
-    <>
+    <div>
       <Image
         src={image}
         className={`${styles.image} ${color}`}
@@ -14,10 +18,13 @@ export default function Project({ name, image, description, color }) {
         loading="lazy"
         alt={`${name} - ${description}`}
       />
-      <div className={`${styles.description} ${color}`}>
-        <h4>Background</h4>
-        <p>{description}</p>
+      <div className={`${styles.descriptionContainer} ${color}`}>
+        <h4>{name}</h4>
+        <div
+          className={`${styles.description}`}
+          dangerouslySetInnerHTML={createMarkup()}
+        />
       </div>
-    </>
+    </div>
   )
 }

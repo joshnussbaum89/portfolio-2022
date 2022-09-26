@@ -21,7 +21,7 @@ export default function RecentWork({ trackDevPosition, trackMusicPosition }) {
         name: 'Tom Ford',
         image: tomFord,
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
+          '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.</p>',
         class: `${styles.red}`,
       },
       {
@@ -29,7 +29,7 @@ export default function RecentWork({ trackDevPosition, trackMusicPosition }) {
         name: 'Supervoid',
         image: supervoid,
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
+          '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.</p>',
         class: `${styles.red}`,
       },
       {
@@ -37,7 +37,7 @@ export default function RecentWork({ trackDevPosition, trackMusicPosition }) {
         name: 'Together Forward',
         image: togetherForward,
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
+          '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.</p>',
         class: `${styles.red}`,
       },
       {
@@ -45,17 +45,16 @@ export default function RecentWork({ trackDevPosition, trackMusicPosition }) {
         name: 'Robby Webb',
         image: robbyWebb,
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
+          '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.</p>',
         class: `${styles.red}`,
       },
     ],
     musicData: [
       {
         id: 0,
-        name: 'What Already Is',
+        name: 'What Already Is - EP',
         image: whatAlreadyIs,
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
+        description: `<p>Listen <a href="https://joshnussbaum.bandcamp.com/album/what-already-is" target="_blank">here</a></p><p>Released January 1, 2016</p><p>Written and performed by Josh Nussbaum</p><p>Engineered, mixed and co-produced by <a href="https://www.robbywebb.com/" target="_blank">Robby Webb</a>, mastered by <a href="https://www.ryanschwabe.com/" target="_blank">Ryan Schwabe</a></p><p>Artwork by Jon Carhart</p>`,
         class: `${styles.purple}`,
       },
       {
@@ -63,7 +62,7 @@ export default function RecentWork({ trackDevPosition, trackMusicPosition }) {
         name: 'Live at the Hangar',
         image: liveAtTheHangar,
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
+          '<p>Listen <a href="https://joshnussbaum.bandcamp.com/album/live-at-the-hangar" target="_blank">here</a></p><p>Watch <a href="https://www.youtube.com/watch?v=qskcgEoOAxU" target="_blank">Take off Your Face</a></p><p>Watch <a href="https://www.youtube.com/watch?v=6s24G_0Ls-A" target="_blank">I\'m Not Scared</a></p><p>Released December 26, 2016</p><p>Written and performed by Josh Nussbaum</p><p>Produced by <a href="https://www.youtube.com/channel/UC-CAb8FRwNs3YKo5JR26mIw/featured" target="_blank">FeedLab Music</a></p><p>Recorded live at <a href="https://www.youtube.com/user/beatkeeper02" target="_blank">The Hangar</a> by Kevin Grossman</p><p>Mixed by <a href="https://www.robbywebb.com/" target="_blank">Robby Webb</a>, mastered by <a href="https://www.ryanschwabe.com/" target="_blank">Ryan Schwabe</a></p><p>Filmed and edited by Justin Swan</p>',
         class: `${styles.purple}`,
       },
       {
@@ -71,7 +70,7 @@ export default function RecentWork({ trackDevPosition, trackMusicPosition }) {
         name: 'Rover Rover, Peace Drink',
         image: peaceDrink,
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius repellat quidem quae dolorem soluta ducimus natus, laboriosam placeat eos dolores deleniti dolor? Similique quibusdam sed excepturi ab veniam ad.',
+          '<p>Listen <a href="https://roverrover.bandcamp.com/album/peace-drink" target="_blank">here</a></p><p>Released May 1, 2020</p><p>Recorded at <a href="https://headroom.studio/" target="_blank">The Headroom</a></p><p>Mixed by <a href="https://www.robbywebb.com/" target="_blank">Robby Webb</a>, mastered by <a href="https://www.ryanschwabe.com/" target="_blank">Ryan Schwabe</a></p><p>Josh Nussbaum - Guitar, Vocals</p><p>Matthew Keppler - Guitar, Vocals, Keyboard,</p><p>Conner Saltzer - Drums, Percussion, Keyboard, Vocals,</p><p>Nick Perri - Bass, Vocals</p>',
         class: `${styles.purple}`,
       },
     ],

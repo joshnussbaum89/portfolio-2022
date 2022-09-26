@@ -1,5 +1,5 @@
 .image,
-.description {
+.descriptionContainer {
   width: 100%;
   border-radius: 10px;
 }
@@ -10,18 +10,18 @@
   margin-bottom: 1rem;
 }
 
-.description {
+.descriptionContainer {
   height: auto;
   margin-bottom: 6rem;
   background-color: var(--color-white);
 }
 
-.description h4,
-.description p {
+.descriptionContainer h4,
+.descriptionContainer p {
   margin: 1rem;
 }
 
-.description h4 {
+.descriptionContainer h4 {
   font-size: var(--size-medium);
 }
 
