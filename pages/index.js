@@ -48,7 +48,7 @@ export default function Home() {
           name="description"
           content="Josh Nussbaum is a freelance web developer specializing in JavaScript and other front end technologies"
         />
-        <link rel="icon" href="/hero-background.jpg" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
       <ScrollingNavigation activeIndex={activeIndex} />
