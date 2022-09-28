@@ -1,0 +1,83 @@
+.controls {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid var(--color-black);
+  border-radius: 4px;
+  transition: var(--transition-normal);
+}
+
+.icon,
+.expandIcon {
+  width: 2.25rem;
+  border-radius: 4px;
+  transition: height 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.icon {
+  height: 0;
+}
+
+.icon:active {
+  opacity: 0.8;
+}
+
+.icon.expanded,
+.expandIcon {
+  height: 2.25rem;
+}
+
+.teal {
+  background-color: var(--color-light-teal);
+}
+
+.red {
+  background-color: var(--color-light-red);
+}
+
+.purple {
+  background-color: var(--color-light-purple);
+}
+
+.green {
+  background-color: var(--color-light-green);
+}
+
+@media (min-width: 768px) {
+  .teal .icon:hover,
+  .teal .expandIcon:hover {
+    fill: var(--color-white);
+    background-color: var(--color-teal);
+  }
+}
+
+@media (min-width: 768px) {
+  .red .icon:hover,
+  .red .expandIcon:hover {
+    fill: var(--color-white);
+    background-color: var(--color-red);
+  }
+}
+
+@media (min-width: 768px) {
+  .purple .icon:hover,
+  .purple .expandIcon:hover {
+    fill: var(--color-white);
+    background-color: var(--color-purple);
+  }
+}
+
+@media (min-width: 768px) {
+  .green .icon:hover,
+  .green .expandIcon:hover {
+    fill: var(--color-white);
+    background-color: var(--color-green);
+  }
+}
