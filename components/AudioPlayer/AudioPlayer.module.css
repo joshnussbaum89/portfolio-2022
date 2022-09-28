@@ -25,7 +25,8 @@
   height: 0;
 }
 
-.icon:active {
+.icon:active,
+.expandIcon:active {
   opacity: 0.8;
 }
 
