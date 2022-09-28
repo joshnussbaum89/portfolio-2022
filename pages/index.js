@@ -64,7 +64,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://portfolio-six-theta-30.vercel.app/public/hero-background.jpg"
+          content="https://portfolio-six-theta-30.vercel.app/hero-background.jpg"
         />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:site" content="@Joshnussbaum" />
