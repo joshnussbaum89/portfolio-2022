@@ -46,8 +46,29 @@ export default function Home() {
         <title>Josh Nussbaum</title>
         <meta
           name="description"
-          content="Josh Nussbaum is a freelance web developer specializing in JavaScript and other front end technologies"
+          content="Web developer and musician currently residing in Madison, WI"
         />
+        <meta
+          name="keywords"
+          content="web developer, web designer, web development, musician, music, guitarist, guitar"
+        />
+        <meta property="og:title" content="Josh Nussbaum" />
+        <meta
+          property="og:url"
+          content="https://portfolio-six-theta-30.vercel.app"
+        />
+        <meta
+          property="og:description"
+          content="Web developer and musician currently residing in Madison, WI"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://portfolio-six-theta-30.vercel.app/public/hero-background.jpg"
+        />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:site" content="@Joshnussbaum" />
+        <meta property="twitter:creator" content="@Joshnussbaum" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
