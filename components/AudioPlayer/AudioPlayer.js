@@ -57,26 +57,19 @@ export default function AudioPlayer({ activeIndex }) {
 
   // Play song
   const play = () => {
-    if (audioRef.current) {
-      if (!trackPlaying) {
-        audioRef.current.play()
-        setTrackPlaying(true)
-        setTrackChanged(true)
-        setTimeout(() => {
-          setTrackChanged(false)
-        }, 5000)
-      }
+    if (audioRef.current && !trackPlaying) {
+      audioRef.current.play()
+      setTrackPlaying(true)
+      setTrackChanged(true)
     }
   }
 
   // Pause song
   const pause = () => {
-    if (audioRef.current) {
-      if (trackPlaying) {
-        audioRef.current.pause()
-        setTrackPlaying(false)
-        setTrackChanged(false)
-      }
+    if (audioRef.current && trackPlaying) {
+      audioRef.current.pause()
+      setTrackPlaying(false)
+      setTrackChanged(false)
     }
   }
 
@@ -86,11 +79,12 @@ export default function AudioPlayer({ activeIndex }) {
       audioRef.current.pause()
       audioRef.current.load()
       audioRef.current.play()
-      setTrackPlaying(true)
-      setTrackChanged(true)
+      setTrackPlaying(false)
+      setTrackChanged(false)
       setTimeout(() => {
-        setTrackChanged(false)
-      }, 5000)
+        setTrackPlaying(true)
+        setTrackChanged(true)
+      }, 50)
     }
   }
 
@@ -136,11 +130,10 @@ export default function AudioPlayer({ activeIndex }) {
       </div>
       <p
         className={
-          trackPlaying && trackChanged
+          trackChanged
             ? `${styles.trackTitle} ${styles.show}`
-            : `${styles.trackTitle}`
+            : styles.trackTitle
         }
-        onAnimationEnd={() => setTrackPlaying(!trackPlaying)}
       >
         {songs[trackNumber].title}
       </p>
