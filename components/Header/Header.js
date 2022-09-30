@@ -1,24 +1,12 @@
 // Components
-import Image from 'next/future/image'
 import Link from 'next/link'
 
 // Styles
 import styles from './Header.module.css'
 
-// Images
-import heroImage from '../../public/hero-background.jpg'
-
 export default function Header({ handleScroll }) {
   return (
     <header className={styles.header}>
-      <Image
-        src={heroImage}
-        className={styles.image}
-        placeholder="blur"
-        priority="true"
-        quality={100}
-        alt="Birds flying in front of a beautiful sunset"
-      />
       <nav>
         <h1 title="Josh Nussbaum">
           <Link href="/">JN</Link>

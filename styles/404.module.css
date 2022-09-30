@@ -1,0 +1,24 @@
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem;
+}
+
+.message h2,
+.message p {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.message h2 {
+  margin-bottom: 1rem;
+  font-size: var(--size-large);
+}
+
+.message p {
+  font-size: var(--size-medium);
+  font-weight: var(--weight-bold);
+}
