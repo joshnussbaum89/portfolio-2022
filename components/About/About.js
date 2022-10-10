@@ -27,27 +27,26 @@ export default function About() {
         <p>
           It wasn&apos;t until recently that I felt compelled to create with
           tools other than my guitar and manuscript paper. I&apos;m now
-          exploring new ways of building stuff, focusing mostly on websites and
-          webapps.
+          exploring new ways of building stuff, focusing mostly on{' '}
+          <span>websites</span> and <span>webapps</span>.
         </p>
         <p>
-          It&apos;s pretty amazing how much creative control one has on the web,
-          and I am currently exploring ways of mixing my <span>love</span> of
-          music with my <span>passion</span> for web development. With code,
-          it&apos;s possible to make almost anything, so the challenge is
-          building unique, carefully branded websites and apps that feel
-          intuitive and accessible for a diverse audience.
+          It&apos;s pretty amazing how much creative control one has on the web.
+          With code, it&apos;s possible to make almost anything, so the
+          challenge is building unique, carefully branded websites and apps that
+          feel intuitive and accessible for a diverse audience.
         </p>
         <p>
           <span className={styles.banner}>
-            Artists and creators should feel supported in as many ways as
-            possible to do their best work.
+            Creators should feel supported in as many ways as possible to do
+            their best work.
           </span>
         </p>
         <p>
-          My goal is to help artists accomplish their creative dreams by
-          building a web experience that supports them. Please get in touch if
-          you have a project you would like to create together!
+          My goal is to help people achieve their professional dreams by
+          building a web experience that supports their vision and inspires
+          creativity, all while prioritizing user experience. Please get in
+          touch if you have a project you would like to build together!
         </p>
       </div>
     </section>

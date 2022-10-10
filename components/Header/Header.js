@@ -24,7 +24,7 @@ export default function Header({ handleScroll }) {
         <h2>Hi, I&apos;m Josh</h2>
         <p>
           I&apos;m a web developer and musician with a passion for building
-          creative things for creative people
+          intuitive web experiences for creative people
         </p>
       </div>
       <Link href="#about">
