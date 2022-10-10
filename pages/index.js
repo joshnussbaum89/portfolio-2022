@@ -10,9 +10,7 @@ import useScrollPosition from '../hooks/useScrollPosition'
 import Footer from '../components/Footer/Footer'
 
 export default function Home() {
-  const [aboutPosition, setAboutPosition] = useState(0)
-  const [devPosition, setDevPosition] = useState(0)
-  const [musicPosition, setMusicPosition] = useState(0)
+  const [workPosition, setWorkPosition] = useState(0)
   const [contactPosition, setContactPosition] = useState(0)
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -20,25 +18,15 @@ export default function Home() {
   useScrollPosition()
 
   // Track section ref locations for scrolling logic + styling updates
-  const trackAboutPosition = (element) => {
+  const trackWorkPosition = (element) => {
     if (!element) return
-    setAboutPosition(element.getBoundingClientRect().top)
-    aboutPosition < 300 ? setActiveIndex(1) : setActiveIndex(0)
-  }
-  const trackDevPosition = (element) => {
-    if (!element) return
-    setDevPosition(element.getBoundingClientRect().top)
-    if (devPosition < 300) setActiveIndex(2)
-  }
-  const trackMusicPosition = (element) => {
-    if (!element) return
-    setMusicPosition(element.getBoundingClientRect().top)
-    if (musicPosition < 300) setActiveIndex(3)
+    setWorkPosition(element.getBoundingClientRect().top)
+    workPosition < 300 ? setActiveIndex(1) : setActiveIndex(0)
   }
   const trackContactPosition = (element) => {
     if (!element) return
     setContactPosition(element.getBoundingClientRect().top)
-    if (contactPosition < 300) setActiveIndex(4)
+    if (contactPosition < 300) setActiveIndex(2)
   }
 
   return (
@@ -76,11 +64,8 @@ export default function Home() {
       <ScrollingNavigation activeIndex={activeIndex} />
       <AudioPlayer activeIndex={activeIndex} />
       <main>
-        <About trackAboutPosition={trackAboutPosition} />
-        <RecentWork
-          trackDevPosition={trackDevPosition}
-          trackMusicPosition={trackMusicPosition}
-        />
+        <About />
+        <RecentWork trackWorkPosition={trackWorkPosition} />
       </main>
       <Footer trackContactPosition={trackContactPosition} />
     </>

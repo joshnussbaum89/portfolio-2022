@@ -41,14 +41,7 @@ export default function AudioPlayer({ activeIndex }) {
     },
   ]
 
-  // TODO: color logic should be connected to activeIndex in index.js
-  const colors = [
-    `${styles.teal}`,
-    `${styles.teal}`,
-    `${styles.red}`,
-    `${styles.purple}`,
-    `${styles.green}`,
-  ]
+  const colors = [`${styles.teal}`, `${styles.red}`, `${styles.green}`]
 
   // Handle icon styles depending on state
   const iconStylesLogic = expanded

@@ -14,18 +14,10 @@ export default function ScrollingNavigation({ activeIndex }) {
     },
     {
       id: 1,
-      section: '#about',
+      section: '#work',
     },
     {
       id: 2,
-      section: '#dev',
-    },
-    {
-      id: 3,
-      section: '#music',
-    },
-    {
-      id: 4,
       section: '#contact',
     },
   ]

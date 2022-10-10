@@ -3,13 +3,7 @@ import Link from 'next/link'
 import styles from './NavigationDot.module.css'
 
 export default function NavigationDot({ dotId, section, activeIndex }) {
-  const colors = [
-    `${styles.teal}`,
-    `${styles.teal}`,
-    `${styles.red}`,
-    `${styles.purple}`,
-    `${styles.green}`,
-  ]
+  const colors = [`${styles.teal}`, `${styles.red}`, `${styles.green}`]
 
   // When user clicks navigation dot, style dot and navigate to section
   return (

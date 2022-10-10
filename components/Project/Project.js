@@ -4,10 +4,7 @@ import Image from 'next/future/image'
 // Styles
 import styles from './Project.module.css'
 
-export default function Project({ name, image, description, type }) {
-  // Determine color based on section
-  const color = type === 'dev' ? styles.red : styles.purple
-
+export default function Project({ name, image, description }) {
   // Render HTML from string
   function createMarkup() {
     return { __html: description }
@@ -17,12 +14,13 @@ export default function Project({ name, image, description, type }) {
     <div>
       <Image
         src={image}
-        className={`${styles.image} ${color}`}
+        className={`${styles.image} ${styles.red}`}
+        width={950}
+        height={550}
         placeholder="blur"
-        loading="lazy"
         alt={name}
       />
-      <div className={`${styles.descriptionContainer} ${color}`}>
+      <div className={`${styles.descriptionContainer} ${styles.red}`}>
         <h4>{name}</h4>
         <div
           className={`${styles.description}`}

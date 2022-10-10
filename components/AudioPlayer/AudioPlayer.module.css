@@ -47,10 +47,6 @@
   background-color: var(--color-red);
 }
 
-.expandIcon.playing.purple {
-  background-color: var(--color-purple);
-}
-
 .expandIcon.playing.green {
   background-color: var(--color-green);
 }
