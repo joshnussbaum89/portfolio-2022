@@ -7,7 +7,7 @@ import styles from './RecentWork.module.css'
 // Images
 import supervoid from '../../public/supervoid.png'
 import robbyWebb from '../../public/robby-webb.png'
-import tomFord from '../../public/tom-ford.png'
+import chillGuyCooks from '../../public/chill-guy-cooks.png'
 import togetherForward from '../../public/together-forward.png'
 
 export default function RecentWork({ trackWorkPosition }) {
@@ -28,10 +28,10 @@ export default function RecentWork({ trackWorkPosition }) {
     },
     {
       id: 2,
-      name: 'Tom Ford Beauty',
-      image: tomFord,
+      name: 'Chill Guy Cooks',
+      image: chillGuyCooks,
       description:
-        '<p>Fragrance finder quiz build for Tom Ford Beauty</p><p><i>Built while working at <a href="https://www.wyng.com/" target="_blank">Wyng,</a> I do not own the rights to the website or the code</i></p><p>HTML5 | CSS3 | JavaScript ES6 | jQuery</p><p><a href="https://tomfordbeauty.wyng.com/fragrance-finder-global-master" target="_blank">Live site</a></p>',
+        '<p>Website build for Kevin Ripley (Chill Guy Cooks), Philadelphia chef and musician</p><p>HTML5 | SCSS | JavaScript ES6</p><p><a href="https://chillguycooks.com" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/Chill-Guy-Cooks" target="_blank">Code</a></p>',
     },
     {
       id: 3,
