@@ -11,9 +11,12 @@ export default function Layout({ children }) {
       <Image
         src={heroImage}
         className={styles.image}
-        placeholder="blur"
-        priority="true"
         quality={100}
+        width={1024}
+        height={756}
+        sizes="100vw"
+        placeholder="blur"
+        priority
         alt="Birds flying in front of a beautiful sunset"
       />
       {children}

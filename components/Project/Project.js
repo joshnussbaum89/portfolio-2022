@@ -14,16 +14,17 @@ export default function Project({ name, image, description }) {
     <div>
       <Image
         src={image}
-        className={`${styles.image} ${styles.red}`}
-        width={950}
-        height={550}
+        className={styles.image}
+        width={3008}
+        height={1720}
+        sizes="(min-width: 768px) 50vw, 100vw"
         placeholder="blur"
         alt={name}
       />
-      <div className={`${styles.descriptionContainer} ${styles.red}`}>
+      <div className={styles.descriptionContainer}>
         <h4>{name}</h4>
         <div
-          className={`${styles.description}`}
+          className={styles.description}
           dangerouslySetInnerHTML={createMarkup()}
         />
       </div>
