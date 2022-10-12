@@ -62,8 +62,16 @@
   font-weight: var(--weight-extra-bold);
   color: var(--color-white);
   background-color: var(--color-black);
-  border: none;
+  border: 2px solid var(--color-black);
+  transition: var(--transition-normal);
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .form button:hover {
+    color: var(--color-black);
+    background-color: transparent;
+  }
 }
 
 .success {

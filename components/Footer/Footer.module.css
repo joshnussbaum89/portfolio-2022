@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   padding: 1rem;
-  background: var(--color-light-grey-green-gradient);
+  background: var(--color-light-grey-teal-gradient);
 }
 
 .contact h3 {
@@ -11,7 +11,7 @@
 }
 
 .contact h3 span {
-  color: var(--color-green);
+  color: var(--color-teal);
 }
 
 .contact p {

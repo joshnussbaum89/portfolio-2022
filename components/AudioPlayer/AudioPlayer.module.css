@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-color: var(--color-light-teal);
   border: 2px solid var(--color-black);
   border-radius: 4px;
   transition: var(--transition-normal);
@@ -37,18 +38,7 @@
 
 .expandIcon.playing {
   fill: var(--color-white);
-}
-
-.expandIcon.playing.teal {
   background-color: var(--color-teal);
-}
-
-.expandIcon.playing.red {
-  background-color: var(--color-red);
-}
-
-.expandIcon.playing.green {
-  background-color: var(--color-green);
 }
 
 .trackTitle {
@@ -70,51 +60,11 @@
   animation: fadeInFadeOut 5s ease-in-out;
 }
 
-.teal {
-  background-color: var(--color-light-teal);
-}
-
-.red {
-  background-color: var(--color-light-red);
-}
-
-.purple {
-  background-color: var(--color-light-purple);
-}
-
-.green {
-  background-color: var(--color-light-green);
-}
-
 @media (min-width: 768px) {
-  .teal .icon:hover,
-  .teal .expandIcon:hover {
+  .icon:hover,
+  .expandIcon:hover {
     fill: var(--color-white);
     background-color: var(--color-teal);
-  }
-}
-
-@media (min-width: 768px) {
-  .red .icon:hover,
-  .red .expandIcon:hover {
-    fill: var(--color-white);
-    background-color: var(--color-red);
-  }
-}
-
-@media (min-width: 768px) {
-  .purple .icon:hover,
-  .purple .expandIcon:hover {
-    fill: var(--color-white);
-    background-color: var(--color-purple);
-  }
-}
-
-@media (min-width: 768px) {
-  .green .icon:hover,
-  .green .expandIcon:hover {
-    fill: var(--color-white);
-    background-color: var(--color-green);
   }
 }
 

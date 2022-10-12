@@ -8,14 +8,6 @@
   cursor: pointer;
 }
 
-.teal {
+.active {
   background-color: var(--color-teal);
-}
-
-.red {
-  background-color: var(--color-red);
-}
-
-.green {
-  background-color: var(--color-green);
 }

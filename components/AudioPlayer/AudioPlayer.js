@@ -41,8 +41,6 @@ export default function AudioPlayer({ activeIndex }) {
     },
   ]
 
-  const colors = [`${styles.teal}`, `${styles.red}`, `${styles.green}`]
-
   // Handle icon styles depending on state
   const iconStylesLogic = expanded
     ? `${styles.icon} ${styles.expanded}`
@@ -103,7 +101,7 @@ export default function AudioPlayer({ activeIndex }) {
 
   return (
     <>
-      <div className={`${styles.controls} ${colors[activeIndex]}`}>
+      <div className={styles.controls}>
         <TiMediaPlay className={iconStylesLogic} onClick={play} />
         <TiMediaPause className={iconStylesLogic} onClick={pause} />
         <TiMediaRewind className={iconStylesLogic} onClick={previousTrack} />
@@ -111,7 +109,7 @@ export default function AudioPlayer({ activeIndex }) {
         <TiNotesOutline
           className={
             trackPlaying
-              ? `${styles.expandIcon} ${styles.playing} ${colors[activeIndex]}`
+              ? `${styles.expandIcon} ${styles.playing}`
               : styles.expandIcon
           }
           onClick={() => setExpanded(!expanded)}
