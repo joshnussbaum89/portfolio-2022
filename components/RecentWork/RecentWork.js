@@ -31,7 +31,7 @@ export default function RecentWork({ trackWorkPosition }) {
       name: 'Chill Guy Cooks',
       image: chillGuyCooks,
       description:
-        '<p>Website build for Kevin Ripley (Chill Guy Cooks), Philadelphia chef and musician</p><p>HTML5 | SCSS | JavaScript ES6</p><p><a href="https://chillguycooks.com" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/Chill-Guy-Cooks" target="_blank">Code</a></p>',
+        '<p>Website build for Kevin Ripley (Chill Guy Cooks), Philadelphia chef and musician</p><p>HTML5 | SCSS | JavaScript ES6</p><p><a href="https://chillguycooks.com" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/chill-guy-cooks" target="_blank">Code</a></p>',
     },
     {
       id: 3,
