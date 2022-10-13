@@ -10,6 +10,9 @@ import useScrollPosition from '../hooks/useScrollPosition'
 import Footer from '../components/Footer/Footer'
 
 export default function Home() {
+  // Blog branch test
+  console.log('-- blog branch test --')
+
   const [workPosition, setWorkPosition] = useState(0)
   const [contactPosition, setContactPosition] = useState(0)
   const [activeIndex, setActiveIndex] = useState(0)
