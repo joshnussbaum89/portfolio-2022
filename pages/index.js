@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Header from '../components/Header/Header'
 import ScrollingNavigation from '../components/ScrollingNavigation/ScrollingNavigation'
 import AudioPlayer from '../components/AudioPlayer/AudioPlayer'
-import About from '../components/About/About'
 import RecentWork from '../components/RecentWork/RecentWork'
 import useScrollPosition from '../hooks/useScrollPosition'
 import Footer from '../components/Footer/Footer'
@@ -64,7 +63,6 @@ export default function Home() {
       <ScrollingNavigation activeIndex={activeIndex} />
       <AudioPlayer activeIndex={activeIndex} />
       <main>
-        <About />
         <RecentWork trackWorkPosition={trackWorkPosition} />
       </main>
       <Footer trackContactPosition={trackContactPosition} />

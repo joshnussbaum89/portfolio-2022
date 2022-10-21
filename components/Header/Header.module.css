@@ -1,7 +1,15 @@
+.image {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header {
   height: 100vh;
+  margin: 0;
   color: var(--color-white);
-  margin: 0 0 10rem;
 }
 
 .header nav {
@@ -56,6 +64,19 @@
   font-size: var(--size-medium);
   font-weight: var(--weight-bold);
   max-width: 35rem;
+}
+
+.greeting a {
+  color: var(--color-light-teal);
+  text-shadow: 1px 1px 0 var(--color-teal);
+  transition: var(--transition-normal);
+}
+
+@media (min-width: 768px) {
+  .greeting a:hover {
+    color: var(--color-teal);
+    text-shadow: 1px 1px 0 var(--color-light-teal);
+  }
 }
 
 .arrow {
