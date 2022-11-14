@@ -8,7 +8,9 @@ import styles from './RecentWork.module.css'
 import supervoid from '../../public/supervoid.png'
 import robbyWebb from '../../public/robby-webb.png'
 import chillGuyCooks from '../../public/chill-guy-cooks.png'
-import togetherForward from '../../public/together-forward.png'
+import coursesPortal from '../../public/courses-portal.png'
+import wheelOfSuccess from '../../public/wheel-of-success.png'
+import beerBarnBrewery from '../../public/the-beer-barn.png'
 
 export default function RecentWork({ trackWorkPosition }) {
   const data = [
@@ -35,10 +37,24 @@ export default function RecentWork({ trackWorkPosition }) {
     },
     {
       id: 3,
-      name: 'PMI',
-      image: togetherForward,
+      name: 'Courses Portal',
+      image: coursesPortal,
       description:
-        '<p>Together Forward UGC campaign for Philip Morris International (PMI)</p><p><i>Built while working at <a href="https://www.wyng.com/" target="_blank">Wyng,</a> I do not own the rights to the website or the code</i></p><p>HTML5 | CSS3 | JavaScript ES6 | jQuery</p><p><a href="https://app.wyng.com/together-forward-demo/preview" target="_blank">Live site</a></p>',
+        '<p>Full Stack React and Node application for creating and maintaining courses</p><p>React | Node | SQL</p><p><a href="https://github.com/joshnussbaum89/school-database-with-react-and-a-rest-API" target="_blank">Code</a></p>',
+    },
+    {
+      id: 4,
+      name: 'Wheel of Success',
+      image: wheelOfSuccess,
+      description:
+        '<p>Wheel of Fortune-esque movie phrase guessing game</p><p>HTML5 | CSS3 | JavaScript ES6</p><p><a href="https://neon-flan-742630.netlify.app/" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/wheel-of-success" target="_blank">Code</a></p>',
+    },
+    {
+      id: 5,
+      name: 'The Beer Barn Brewery',
+      image: beerBarnBrewery,
+      description:
+        '<p>Template business landing page with an age gate (21+)</p><p>HTML5 | CSS3 | JavaScript ES6</p><p><a href="https://teal-mermaid-89b056.netlify.app/" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/beer-barn-brewery" target="_blank">Code</a></p>',
     },
   ]
 
