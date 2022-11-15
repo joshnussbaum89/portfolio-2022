@@ -47,7 +47,7 @@ export default function RecentWork({ trackWorkPosition }) {
       name: 'Wheel of Success',
       image: wheelOfSuccess,
       description:
-        '<p>Wheel of Fortune-esque movie phrase guessing game</p><p>HTML5 | CSS3 | JavaScript ES6</p><p><a href="https://neon-flan-742630.netlify.app/" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/wheel-of-success" target="_blank">Code</a></p>',
+        '<p>Wheel of Fortune-esque movie quote guessing game</p><p>HTML5 | CSS3 | JavaScript ES6</p><p><a href="https://neon-flan-742630.netlify.app/" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/wheel-of-success" target="_blank">Code</a></p>',
     },
     {
       id: 5,
