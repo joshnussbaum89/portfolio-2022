@@ -7,9 +7,7 @@ import styles from './RecentWork.module.css'
 // Images
 import supervoid from '../../public/supervoid.png'
 import robbyWebb from '../../public/robby-webb.png'
-import chillGuyCooks from '../../public/chill-guy-cooks.png'
-import coursesPortal from '../../public/courses-portal.png'
-import wheelOfSuccess from '../../public/wheel-of-success.png'
+import tomFord from '../../public/tom-ford.png'
 import beerBarnBrewery from '../../public/the-beer-barn.png'
 
 export default function RecentWork({ trackWorkPosition }) {
@@ -30,31 +28,17 @@ export default function RecentWork({ trackWorkPosition }) {
     },
     {
       id: 2,
-      name: 'Chill Guy Cooks',
-      image: chillGuyCooks,
+      name: 'Tom Ford Beauty',
+      image: tomFord,
       description:
-        '<p>Website build for Kevin Ripley (Chill Guy Cooks), Philadelphia chef and musician</p><p>HTML5 | SCSS | JavaScript ES6</p><p><a href="https://chillguycooks.com" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/chill-guy-cooks" target="_blank">Code</a></p>',
+        '<p>Fragrance Finder for <a href="https://www.tomford.com/beauty/" target="_blank">Tom Ford Beauty</a>, built with my team while working at <a href="https://www.wyng.com/" target="_blank">Wyng</a></p><p><em>I do not own the rights to this code</em></p><p>HTML5 | CSS3 | JavaScript | jQuery</p><p><a href="https://tomfordbeauty.wyng.com/fragrance-finder-global-master" target="_blank">Live site</a></p>',
     },
     {
       id: 3,
-      name: 'Courses Portal',
-      image: coursesPortal,
-      description:
-        '<p>Full Stack React and Node application for creating and maintaining courses</p><p>React | Node | SQL</p><p><a href="https://github.com/joshnussbaum89/school-database-with-react-and-a-rest-API" target="_blank">Code</a></p>',
-    },
-    {
-      id: 4,
-      name: 'Wheel of Success',
-      image: wheelOfSuccess,
-      description:
-        '<p>Wheel of Fortune-esque movie quote guessing game</p><p>HTML5 | CSS3 | JavaScript ES6</p><p><a href="https://neon-flan-742630.netlify.app/" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/wheel-of-success" target="_blank">Code</a></p>',
-    },
-    {
-      id: 5,
       name: 'The Beer Barn Brewery',
       image: beerBarnBrewery,
       description:
-        '<p>Template business landing page with an age gate (21+)</p><p>HTML5 | CSS3 | JavaScript ES6</p><p><a href="https://teal-mermaid-89b056.netlify.app/" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/beer-barn-brewery" target="_blank">Code</a></p>',
+        '<p>Template business landing page with an age gate (21+)</p><p>HTML5 | CSS3 | JavaScript</p><p><a href="https://teal-mermaid-89b056.netlify.app/" target="_blank">Live site</a></p><p><a href="https://github.com/joshnussbaum89/beer-barn-brewery" target="_blank">Code</a></p>',
     },
   ]
 
